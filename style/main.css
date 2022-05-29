@@ -142,6 +142,10 @@ h2{
 
   /* GRID */
 
+  .content-grid h1, h2{
+    font-family: 'Source Serif Pro', serif;
+  }
+
   .content-grid{
     display: grid;
     grid-template-columns: repeat(20, 50px);
