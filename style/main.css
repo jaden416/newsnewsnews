@@ -138,7 +138,7 @@ h2{
 
 
 
-@media only screen and (min-width: 600px)  {
+
 
   /* GRID */
 
@@ -148,13 +148,13 @@ h2{
 
   .content-grid{
     display: grid;
-    grid-template-columns: repeat(20, 50px);
-    grid-template-rows: repeat(60, 50px);
+    grid-template-columns: repeat(20, 3.125em);
+    grid-template-rows: repeat(60, 3.125em);
 
     /* grid-template-columns: repeat(20, 1fr); */
     margin: 150px auto;
 
-    width: 1000px;
+    width: 62.5em;
   }
 
 
@@ -283,4 +283,3 @@ h2{
 
   }
 
-}
