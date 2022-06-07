@@ -101,7 +101,10 @@ button {
 
 /* CONTENT */
 
+.content-grid h1, h2 , h3{
+  font-family: 'Source Serif Pro', serif;
 
+}
 
 /* Button that opens and closes the sidebar */
 #toggle  {
@@ -138,31 +141,19 @@ h2{
 
 
 
-
+@media only screen and (min-width: 600px)  {
 
   /* GRID */
-<<<<<<< HEAD
 
-  .content-grid h1, h2{
-    font-family: 'Source Serif Pro', serif;
-  }
-
-=======
-  
-  .content-grid h1, h2{
-    font-family: 'Source Serif Pro', serif;
-  }
-  
->>>>>>> 26513ec690ab291e87bd95deef88f41386439364
   .content-grid{
     display: grid;
-    grid-template-columns: repeat(20, 3.125em);
-    grid-template-rows: repeat(60, 3.125em);
+    grid-template-columns: repeat(20, 50px);
+    grid-template-rows: repeat(60, 50px);
 
     /* grid-template-columns: repeat(20, 1fr); */
     margin: 150px auto;
 
-    width: 62.5em;
+    width: 1000px;
   }
 
 
@@ -291,7 +282,4 @@ h2{
 
   }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 26513ec690ab291e87bd95deef88f41386439364
+}
