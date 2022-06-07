@@ -141,11 +141,19 @@ h2{
 
 
   /* GRID */
+<<<<<<< HEAD
 
   .content-grid h1, h2{
     font-family: 'Source Serif Pro', serif;
   }
 
+=======
+  
+  .content-grid h1, h2{
+    font-family: 'Source Serif Pro', serif;
+  }
+  
+>>>>>>> 26513ec690ab291e87bd95deef88f41386439364
   .content-grid{
     display: grid;
     grid-template-columns: repeat(20, 3.125em);
@@ -283,3 +291,7 @@ h2{
 
   }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 26513ec690ab291e87bd95deef88f41386439364
