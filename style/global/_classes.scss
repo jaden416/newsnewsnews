@@ -1,0 +1,140 @@
+//LAYOUT CLASSES
+.container{
+    margin-inline: auto;
+    padding-inline: 2em;
+    max-width: 62.5rem;
+}
+
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+    
+}
+
+.grid{
+    display: grid;
+}
+
+.flow > * + *{
+    margin-top: var(--flow-space, 1em);
+    //outline: 1px solid red;
+}
+
+//TYPOGRAPHY CLASSES
+
+    //font family
+    .ff-serif {font-family: var(--ff-serif);}
+    .ff-sans-normal {font-family: var(--ff-sans-normal);}
+    .ff-sans-italic {font-family: var(--ff-sans-italic); font-weight: 500; font-style: italic; } 
+
+    //font size
+    .fs-300 {font-size: var(--fs-300);}
+    .fs-200 {font-size: var(--fs-200);}
+    .fs-100 {font-size: var(--fs-100);}
+
+
+
+//NAV CLASSES
+.primary-navigation{
+    margin-inline: auto 0;
+    overflow: hidden;
+    gap: 3rem;
+}
+
+.toggle-button {
+    cursor: pointer;
+    display: block;
+    z-index: 1000;
+    position: absolute;
+    right: 1rem;
+    width: 30px;
+    height: 20px;
+    margin-top: 1em;
+    transition: opacity .4s;
+
+    @media (min-width: 45em){
+        display: none;
+    }
+}
+  .toggle-button > #toggle-buttonA div{
+    z-index: 100;
+    position: relative;
+    left: 0;
+    top: -9px;
+    width: 100%;
+    height: 5px;
+    border-radius: 2px;
+    background: #888;
+    margin: 4px auto;
+    transition: all 0.3s;
+    backface-visibility: hidden;
+  }
+
+
+
+@media (max-width: 45em){
+
+    .primary-navigation{
+        margin: 0;
+        position: fixed;
+        flex-direction: column;
+        gap: 2.5rem;
+        z-index: 2;
+        inset: 0 0 0 20%;
+        background: transparent;
+        background-color: #E5E5E5;
+        padding: min(40rem, 20vh) 3rem;
+        
+    }
+
+    .primary-navigation li a {
+        font-size: 1.4em;
+    }
+
+}
+
+//ANIMATIONS
+@media (max-width: 45em){
+
+    #primary-navigation{
+        transition: transform 500ms ease-in-out;
+        
+    }
+
+    .primary-navigation[data-visible="false"]{
+        transform: translateX(100%);
+    }
+
+
+
+    #toggle-buttonA[data-visible="true"]{
+        div:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+            
+        }
+        div:nth-child(2) {
+            opacity: 0;
+        }
+        div:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -8px);
+        }
+    }
+}
+
+
+//MISC CLASS
+
+.primary-navigation li a {
+    transition: 0.3s;
+    outline: red 1px;
+}
+
+
+.primary-navigation li a:hover, .primary-navigation li a:focus  {
+  color: #f1f1f1;
+}
+
+.img-margin {
+    margin-top: 3rem;
+    text-align: center;
+}

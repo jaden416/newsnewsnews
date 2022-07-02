@@ -1,34 +1,29 @@
 window.onload = function(){
 
+const navToggle = document.getElementById('toggle-button');
+const navToggleA = document.getElementById('toggle-buttonA');
+const nav = document.getElementById('primary-navigation');
 
-var icon = document.getElementById('toggle')
+navToggle.onclick = function(){
+  const visiblity = nav.getAttribute("data-visible");
 
+  if (visiblity === 'false'){
 
-var count = 0;
-    var n = 2
+    document.body.style.overflow= "hidden"
 
+    nav.setAttribute('data-visible', true)
+    navToggleA.setAttribute('data-visible', true)
 
-    icon.addEventListener("click", toggle);
+  } else {
+    
+    document.body.style.overflow= "visible"
+
+    nav.setAttribute('data-visible', false)
+    navToggleA.setAttribute('data-visible', false)
+  }
   
 
-    function toggle() {
-      if (count === 0) {
-        //Opens side bar
-        document.getElementById("mySidebar").style.left = "0px";
-        document.getElementById("main").style.marginLeft = "350px";
-      
-      }
-         else if (count === 1) {
-           //Closes sidebar
-        document.getElementById("mySidebar").style.left = "-350px";
-        document.getElementById("main").style.marginLeft= "0";
-        count === 0;
-         }
 
-         
-      count += 1;
-      if (count === n)
-      count = 0;
-
-        }}
+} 
+}
       

@@ -2,158 +2,100 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style/main.css">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="dist/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&family=Source+Serif+Pro:wght@300&display=swap" rel="stylesheet">
 <script src="js/script.js"></script>
 </head>
+
+<header class="primary-header flex container">
+    <nav class="container" style="padding-inline: 1em; margin-inline: auto 0;">
+        <!--mobile nav button-->
+        <div id="toggle-button" class="toggle-button" aria-expanded="false">
+
+            <div id="toggle-buttonA" data-visible="false">
+                <div aria-expanded="false"><p><span class="sr-only">MENU</span></p></div>
+                <div aria-expanded="false"><p><span class="sr-only">MENU</span></p></div>
+                <div aria-expanded="false"><p><span class="sr-only">MENU</span></p></div>
+            </div>
+        </div>
+
+        <!--desktop nav button-->            
+        <ul class="primary-navigation flex container ff-sans-normal fs-100" id="primary-navigation" data-visible="false" style="float: right;">
+                <li><a href>Home</a></li>
+                <li><a href>Stories</a></li>
+                <li><a href>Projects</a></li>
+                <li><a href>Contact</a></li>
+            </ul>
+        
+    </nav>
+</header>
 
 <body>
 
 
-  <div id="mySidebar" class="sidebar">
+    
 
-      <div class="sidebar-content">
-        <div>
-          <h3>More Stories</h3>
-          <a href="#">Why Is It Called Trance?</a>
-          <a href="#">The Rise and Fall Of: Nirvana</a>
-          <a href="#">Who is Burial?</a>
+  <main class="flow container" style="clear:both">
+    <section class="flow">
+        <div class="img-margin">
+            <img src="images/techno_banner.jpg" alt="Juan Atkins and Eddie Fowlkes sitting in the studio.">
+            <!-- <p class="ff-sans-italic fs-100" style="float: right; margin-top: 1rem;">Juan Atkins, Eddie Fowlkes.</p> -->
         </div>
 
-        <div>
-          <h3>Radio & Podcasts</h3>
-          <a href="#">News News News!</a>
-          <a href="#">Video Essayers</a>
-          <a href="#">Some Other Podcast</a>
+        <h1 class="ff-serif fs-300" style="clear:both">The Detroit Techno Scene</h1>
+
+        <p class="ff-sans-italic fs-100">I actually wanted to call this music high tech soul from the very beginning. 
+            I never wanted to call it techno. Thats what I thought it should have been called. But nobody liked it, so... &#8208;Derrick May</p>
+    
+
+        <h2 class="ff-serif fs-200">Origin</h2>
+
+        <p class="ff-sans-normal fs-100">
+            A shared deep love of music, sparked a musical group composed of Derrick May, Juan Atkins, and Kevin Saunderson. 
+            Together, they would eventually become known as the “Belleville Three” and lay down the blueprint for techno music.
+        </p>
+
+        <p class="ff-sans-normal fs-100">
+            The early techno records from the Detroit scene were ignored in Michigan but tracks like Rythim Is Rythim's Strings Of Life, 
+            Model 500's No UFOs and Inner City's Good Life were gaining traction in Europe's club culture.
+        </p>
+
+        <div class="img-margin">
+            <img src="images/the_bellview_three.jpg" alt="The Bellview Three">
+            <p class="ff-sans-italic fs-100" style="margin-top: 1rem;">The Father's of Techno: The Belleville Three</p>
         </div>
-      </div>  
-  </div>
+    </section>
 
+    <section class="flow" style="margin-top: 2em;">
+        <h2 class="ff-serif fs-200">Politics</h2>
+        <p class="ff-sans-normal fs-100">
+            Detroit, a shining example of the futuristic megametroplis many can hope for was beginning to lose its lustre around the 70s. 
+            Detroit's three big car companies were moving out of the city in search of cheaper land. 
+            Those that could afford to leave the city did and those that couldn't were abondoned.
+        </p>
 
-  <!--CONTENT-->
+        <p class="ff-sans-normal fs-100">The abondoned youth, well aware of their circumstances, craved an escape. And that escape came to be techno music.</p>
+        <p class="ff-sans-normal fs-100">With decaying Detroit as a muse, the resulting sound of techno is a minimal, soulful melancholy.</p>
+    </section>
 
+    <section class="flow" style="margin-top: 2em;">
+        <h2 class="ff-serif fs-200">Influences</h2>
+        <p class="ff-sans-normal fs-100">The Electrifying Mojo, a radio DJ personality based in Detroit, played a large role in influencing the Bellview Three's music.</p>
+        <p class="ff-sans-normal fs-100">Charles Johnson, the man behind the radio name, is largely known to play a broad selection of music ranging from American funk music to European electronic music.</p>
+        <p class="ff-sans-normal fs-100">Sonically speaking, Detroit techno was the synthesis of what The Electrifying Mojo played on his radio station. The Bellview Three have credited the radio station for putting them on to artists like P-Funk, Kraftwerk, and Michael Henderson. </p>
+        <p class="ff-sans-normal fs-100">Kraftwerk, a European electronic/new wave band, put Germany on the map for the trio.</p>
 
-  <img id = "toggle"  src="images/icon_bar.png">
-  <div id="main">
-
-  
-
-
-
-
-    <div class="content-grid">
-
-      <div class="nav">
-          <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Projects</a></li>
-              <li><a href="#">Contact</a></li>
-          </ul>
-      </div>
-
-      <div id="banner">
-          <img src="images/techno_banner.jpg" alt="Juan Atkins and Eddie Fowlkes sitting in the studio.">
-      </div>
-
-      <div id="banner-credit" class="credit"> 
-          <p>Juan Atkins, Eddie Fowlkes.</p>
-      </div>
-
-      <div id="title">
-          <h1>The Detroit Techno Scene</h1>
-
-              <p>
-                  I actually wanted to call this music high tech soul from the very beginning. 
-                  I never wanted to call it techno. 
-                  Thats what I thought it should have been called. But nobody liked it, so... &#8208;Derrick May
-              </p>
-      </div>
-          <div id="origin">
-              <h2>Origin</h2 >
-
-                  <p>
-                      A shared deep love of music, sparked a musical group composed of Derrick May, Juan Atkins, and Kevin Saunderson. 
-                      Together, they would eventually become known as the “Belleville Three” and lay down the blueprint for techno music.
-
-                  </p>
-
-                  <p>
-                      The early techno records from the Detroit scene were ignored in Michigan but tracks like Rythim Is Rythim's Strings Of Life, 
-                      Model 500's No UFOs and Inner City's Good Life were gaining traction in Europe's club culture.
-                  </p>
-      </div>
-
-      <div id="bellview">
-              <img src="images/the_bellview_three.jpg" alt="The Bellview Three">
-
-      </div>
-
-      <div id="pic-credit1" class="credit">
-          <p>
-              The Father's of Techno: The Belleville Three
-          </p>
-      </div>
-
-
-      <div id="politics">
-          <h2>Politics</h2 >
-
-              <p>
-                  Detroit, a shining example of the futuristic megametroplis many can hope for was beginning to lose its lustre around the 70s. Detroit's three big car companies were moving out of the city in search of cheaper land. Those that could afford to leave the city did and those that couldn't were abondoned.
-              </p>
-      
-              <p>
-                  The abondoned youth, well aware of their circumstances, craved an escape. And that escape came to be techno music.
-              </p>
-
-              <p>
-                  With decaying Detroit as a muse, the resulting sound of techno is a minimal, soulful melancholy.
-              </p>
-
-      </div> 
-
-      <div id="influences">
-          <h2>Influences</h2 >
-
-              <p>
-                  The Electrifying Mojo, a radio DJ personality based in Detroit, played a large role in influencing the Bellview Three's music.
-              </p>
-      
-              <p>
-                  Charles Johnson, the man behind the radio name, is largely known to play a broad selection of music ranging from American funk music to European electronic music.
-              </p>
-
-              <p>
-                  Sonically speaking, Detroit techno was the synthesis of what The Electrifying Mojo played on his radio station. The Bellview Three have credited the radio station for putting them on to artists like P-Funk, Kraftwerk, and Michael Henderson. 
-              </p>
-
-              <p>
-                  Kraftwerk, a European electronic/new wave band, put Germany on the map for the trio.
-              </p>  
-      </div> 
-
-      <div id="vinyl">
-          <img src="images/vinyl.png" alt="vinyl">
-      </div>
-
-      <div id="pic-credit2" class="credit">
-          <p>
-              Rhythim is Rhythim vinyl, 1987
-          </p>
-      </div>
-
-      <div id="legacy">
-          <h2>Legacy</h2>
-              <p>
-                  In today's day and age, techno is commended as one of the most influential electronic sounds to date.
-              </p>
-              <p>
-                  There are many derivitive subgenres including minimal techno, ambient techno, hardcore techno, industrial techno, and intelligent dance music.
-              </p>
-      </div>
-  </div>
+        <div class="img-margin">
+            <img src="images/vinyl.png" alt="vinyl">
+            <p class="ff-sans-italic fs-100" style="margin-top: 1rem;">Rhythim is Rhythim vinyl, 1987</p>
+        </div>
+    </section>
+    <section class="flow" style="margin-top: 2em;">
+        <h2 class="ff-serif fs-200">Legacy</h2>
+        <p class="ff-sans-normal fs-100">In today's day and age, techno is commended as one of the most influential electronic sounds to date.</p>
+        <p class="ff-sans-normal fs-100">There are many derivitive subgenres including minimal techno, ambient techno, hardcore techno, industrial techno, and intelligent dance music.</p>
+    </section>
+    </main>
 
 
 

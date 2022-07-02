@@ -1,0 +1,72 @@
+//700px, 900px, 1440px divide these by 16 to convert it to em units
+
+
+
+$breakpoints-up:(
+    "medium":  43.75,
+    "large": 56.25,
+);
+
+
+@mixin breakpoints-up($size) {
+    @media (min-width: map-get($breakpoints-up, $size)){
+        @content;
+    }
+}
+
+
+
+.sidebar {
+    height: 100%;
+    width: 350px;
+    position: fixed;
+    z-index: 1;
+
+
+    overflow-x: hidden;
+    transition: 0.5s;
+
+  }
+  
+  
+  
+  .sidebar-content{
+    display: grid;
+    width: 100%;
+  
+    grid-template-rows: 200px;
+  
+    align-items: center;
+  
+  }
+   .sidebar-content  div h3 , div a{
+    margin-left: 10%;
+  }
+  
+  .sidebar-content  div h3{
+    font-family: 'Source Serif Pro', serif;
+
+    font-weight: normal;
+    margin-bottom: 10px; 
+  }
+  .sidebar-content div a{
+    margin-bottom: 8px; 
+    margin-left: 13%;
+  } 
+  
+  .sidebar-content div{
+    display: grid;
+    width: 100%;
+    margin-top: 250px;
+    align-items: center;
+  
+  }
+  .sidebar-content a {
+    text-decoration: none;
+
+    transition: 0.3s;
+  }
+  
+   .sidebar-content a:hover {
+    color: #f1f1f1;
+  } 
