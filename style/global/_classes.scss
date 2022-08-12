@@ -23,9 +23,9 @@
 //TYPOGRAPHY CLASSES
 
     //font family
-    .ff-serif {font-family: var(--ff-serif);}
-    .ff-sans-normal {font-family: var(--ff-sans-normal);}
-    .ff-sans-italic {font-family: var(--ff-sans-italic); font-weight: 500; font-style: italic; } 
+    .ff-serif {font-family: 'Merriweather', serif;}
+    .ff-sans-normal {font-family: 'Karla', sans-serif;}
+    .ff-sans-italic {font-family: 'Karla', sans-serif, italic; font-weight: 500; font-style: italic; } 
 
     //font size
     .fs-300 {font-size: var(--fs-300);}
